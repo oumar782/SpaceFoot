@@ -1,4 +1,301 @@
 
+<<<<<<< HEAD
+=======
+.header {
+  background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent */
+  padding: 0px;
+  text-align: left;
+  box-shadow: 0 0 15px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  backdrop-filter: blur(80px); /* Ajusté à une valeur plus subtile */
+  color: white; 
+}
+
+#about{
+  color: orange;
+}
+
+
+.red {
+  color: red;
+  text-shadow: 2px 2px 8px black;
+}
+
+.blue {
+  color: green;
+  text-shadow: 2px 2px 8px black;
+}
+
+.yellow {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.links a:hover {
+  border-radius: 5px;
+  color: green;
+}
+
+
+
+
+.homepage {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Vidéo de fond */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+/* Contenu de la section d'accueil */
+.homepage .content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 85%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Titre principal */
+.homepage .content h1 {
+  font-size: calc(3vw + 1rem); /* Taille de police fluide */
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 255, 0, 0.5); /* Vert semi-transparent */
+}
+
+/* Texte descriptif */
+.homepage .content .text p {
+  margin-bottom: 50px;
+  color: #eeeeee;
+  font-size: calc(1.2vw + 0.8rem); /* Taille de police fluide */
+  line-height: 1.8;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  font-style: oblique;
+}
+
+/* Liens principaux */
+.content a {
+  color: whitesmoke;
+  display: block;
+  text-transform: uppercase;
+  font-size: calc(1vw + 0.6rem); /* Taille de police fluide */
+  margin: 0 10px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: #fff;
+  border: 2px solid #fff;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Section des boutons "Nos Services" et "Contact" */
+.ok {
+  display: flex;
+  gap: 20px;
+}
+
+/* Section des icônes sociales */
+.oui {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+/* Icônes sociales */
+.oui a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  font-size: calc(1.5vw + 0.5rem); /* Taille de police fluide */
+  border-radius: 50%;
+  background-color: rgba(8, 8, 8, 0.5);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.oui a:hover {
+  background-color: #4070f4;
+  transform: scale(1.1);
+}
+#skills i {
+  height: 100px;
+  width: 100px;
+}
+
+#portfolio img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+#about .img::before {
+  content: '';
+  left: 50%;
+  width: 4px;
+  position: absolute;
+  height: calc(100% + 140px);
+  background: var(--gray-color);
+}
+
+#about img,
+#about .hire-text h2 {
+  width: 140px;
+}
+
+#about .hire-text h2 {
+  height: 140px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+/* Section Skills */
+#skills {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Titre de la section Skills */
+#skills h2 {
+  font-size: 2.5rem; /* Taille du texte */
+  font-weight: 700; /* Poids de la police */
+  color: white; /* Couleur du texte */
+  text-align: center; /* Alignement centré */
+  margin-bottom: 10px; /* Ajout d'un espacement en bas */
+  margin-left: 110px;
+  margin-top: -50px;
+
+  text-shadow: 2px 2px 15px rgba(0, 255, 0, 0.5); /* Vert semi-transparent */
+
+}
+
+/* Sous-titre (description) sous le titre */
+#skills h5 {
+  font-size: 1.1rem; /* Taille du texte */
+  color: #e6e9eb; /* Couleur grise */
+  font-style: italic; /* Style italique */
+  margin-top: 10px; /* Espacement en haut */
+  text-align: center; /* Alignement centré */
+  margin-bottom: 30px; /* Ajout d'un espacement en bas */
+  margin-left: 210px;
+
+}
+
+/* Container de la row pour les cartes */
+#skills .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Espace entre les cartes */
+}
+.card {
+  border-radius: 10px; /* Arrondir les coins */
+  box-shadow: 0 24px 26px rgb(0, 100, 0, 0.3); /* Vert foncé avec plus de visibilité */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition douce */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Effet de levée au survol */
+  box-shadow: 0 24px 26px rgba(167, 170, 167, 0.5); /* Ombre plus forte au survol */
+}
+
+
+
+.card i {
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 20px;
+  text-shadow: 2px 2px 15px rgba(0, 255, 0, 0.5); /* Vert semi-transparent */
+
+}
+
+.card p {
+  font-size: 1rem;
+  color: white;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Styles supplémentaires pour les icônes */
+.fa-cart-shopping {
+  background-color: #007bff;
+}
+
+.fa-laptop {
+  background-color: #28a745;
+}
+
+.fa-mobile-screen-button {
+  background-color: #ffc107;
+}
+>>>>>>> 06701bcf5f9010fd51ad3aebe3492a7ece1d3419
 body{
   background-color: black;
 }
