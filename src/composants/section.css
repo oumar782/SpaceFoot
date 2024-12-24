@@ -1,0 +1,99 @@
+/* Section globale */
+#skills {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 10px rgba(0, 150, 0, 0.5);
+}
+
+#skills h5 {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: calc(33.333% - 2rem);
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center; /* Centrer le texte dans les cartes */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 150, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 1rem 0 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 2rem);
+  }
+
+  #skills h2 {
+    font-size: 2rem;
+  }
+
+  #skills h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    text-align: center; /* Assurer que le texte reste centré dans les cartes */
+  }
+
+  #skills h2 {
+    font-size: 1.5rem;
+    margin-left: 260px; /* Supprimer la marge pour centrer le texte */
+  }
+
+  #skills h5 {
+    font-size: 1rem;
+  }
+
+  /* Optionnel : centrer les éléments à l'intérieur du conteneur parent */
+  .row {
+    justify-content: center; /* Centrer les cartes sur l'écran */
+  }
+}

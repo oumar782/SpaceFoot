@@ -1,22 +1,33 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './composants/Footer.jsx';
-import Header from './composants/header.jsx'; 
-import ImageSlider from './composants/imageslider.jsx'; 
-import Section from './composants/section.jsx'; // Nom corrigé avec une majuscule
-import Section2 from './composants/section2.jsx';
+import Header from './composants/Header.jsx';
+import ImageSlider from './composants/ImageSlider.jsx';
+import Section from './composants/Section.jsx';
+import Section2 from './composants/Section2.jsx';
+import Reservation from './composants/Reservation.jsx';
 
 const App = () => {
   return (
-    <div>
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <ImageSlider />
+                <Section />
+                <Section2 />
+        <Footer />
 
-      <Header />
-      <ImageSlider />
-      <Section /> {/* Nom corrigé pour respecter la convention */}
-      <Section2 /> {/* Nom corrigé pour respecter la convention */}
-      <Footer /> 
-
-      
-
-    </div>
+              </>
+            }
+          />
+          <Route path="/reservation" element={<Reservation />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

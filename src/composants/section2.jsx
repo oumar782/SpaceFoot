@@ -1,5 +1,6 @@
 import myImage from '../assets/Images/1.png'; // Assurez-vous que l'image est bien présente dans ce chemin
 
+import './section2.css'; 
 
 const section2 = () => {
   return (
