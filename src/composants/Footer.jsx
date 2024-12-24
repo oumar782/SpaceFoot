@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="brand-logo">
             <i className="fab fa-slack"></i>
-            <span className="brand-name">FootSpaceReserve</span>
+            <span className="brand-name">FootSpace-Reserve</span>
             <hr />
           </div>
           <hr />

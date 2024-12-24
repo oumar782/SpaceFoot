@@ -11,8 +11,7 @@ const Section = () => {
           <div className="col-12 d-flex flex-column text-center justify-content-center">
             <h2>Réservez en Toute Sécurité</h2>
             <h5 className="text-secondary fw-normal py-2 fst-italic">
-              Accédez à une plateforme intuitive pour réserver votre terrain en quelques clics. Choisissez l'heure, la date et le terrain qui correspondent à vos besoins.
-            </h5>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut facere optio nulla quidem vitae tempora. Vitae, enim cumque architecto reiciendis aut voluptatum voluptas labore natus perferendis, porro iure, omnis itaque!            </h5>
           </div>
         </div>
         <div className="row d-flex justify-content-between mx-0">
