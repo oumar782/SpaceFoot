@@ -10,7 +10,7 @@ const Header = () => {
         <span className="yellow">Reserve</span>
       </h1>
       <div className="links">
-    <a href="">A propos</a>
+    <a href="" id="about">A propos</a>
     <a href="">Réservation</a>
     <a href="">Contact</a>
   </div>
