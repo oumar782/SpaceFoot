@@ -1,0 +1,155 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url('../assets/Images/soccer-goal-football-green-grass-field.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.degrade h1 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    text-shadow: 5px 5px rgba(2, 8, 2, 0.5);
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 5s forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.degrade {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, 0.3));
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    width: 90%; /* Ajuster la largeur à 80% de l'écran (vous pouvez ajuster cette valeur) */
+    height: 80vh; /* Ajuster la hauteur à 60% de la hauteur de la fenêtre */
+    position: fixed;
+    top: 0;  /* Fixer le bloc en haut de l'écran */
+    left: 10%; /* Centrer horizontalement (garde 10% d'espace sur les côtés) */
+   
+    border-radius: 15px; /* Coins arrondis de 15px */
+    overflow: hidden; /* Masquer le contenu qui dépasse les bords arrondis */
+    margin-top: 120px;
+    margin-left: -65px;
+}
+.reservation-container {
+    max-width: 800px;
+    margin-left: 20px ;
+    margin-top: -20px ;
+
+    padding: 20px;
+    border: 1px solid green;
+    border-radius: 8px;
+    box-shadow: 0 50px 50px rgba(2, 85, 19, 0.1);
+    background-color: (249, 249, 249, 0.8); /* Slight transparency for readability */
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(100%);
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.reservation-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: linear-gradient(-50deg, rgba(24, 13, 13, 0.8), rgba(128, 128, 128, 0.3));
+    backdrop-filter: blur(100%);
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid green;
+    border-radius: 18px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+
+}
+.reservation-form input,
+.reservation-form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: linear-gradient(-50deg, rgba(24, 13, 13, 0.8), rgba(128, 128, 128, 0.3));
+    backdrop-filter: blur(100%);
+    color: gray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid green;
+    border-radius: 18px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+.reservation-form button {
+    padding: 13px;
+    background: linear-gradient(0deg, rgba(2, 81, 18, 0.8), rgba(128, 128, 128, 0.3));
+
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 699px;
+    box-shadow: 0px 2px 2px rgba(235, 238, 235, 0.5);
+
+
+}
+
+.reservation-form button:hover {
+    background-color: #45a049;
+}
+
+.reservation-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+.reservation-info .p   {
+    color: #45a049;
+    font-size: 60px;
+}
+.bouton {
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: center; /* Centrer les boutons horizontalement */
+    width: auto; /* Ajuste automatiquement à la taille des boutons */
+    margin-top: 85px ; /* Centrage global et réduction de l'espace */
+    box-shadow: 0px 2px 2px rgba(12, 12, 12, 0.5);
+}
+
+.bouton button {
+    background: linear-gradient(0deg, rgba(2, 81, 18, 0.8), rgba(128, 128, 128, 0.3));
+    color: white;
+    padding: 5px 30px; /* Réduit la taille des boutons */
+    border: none;
+    border-radius: 50px; /* Coins légèrement arrondis */
+    cursor: pointer;
+    font-size: 15px; /* Texte plus petit */
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.bouton button:hover {
+    background-color: #45a049; /* Vert plus foncé au survol */
+}

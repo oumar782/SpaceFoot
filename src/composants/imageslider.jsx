@@ -1,5 +1,11 @@
 import './homepage.css'; 
 import videoFile from '../assets/videos/Blue And White Modern Extend a Helping Hand through Open Donations Instagram Post (1).mp4';
+import myImage from '../assets/Images/whatsapp.png';
+import myImages from '../assets/Images/twitter.png';
+import myImagess from '../assets/Images/instagram.png';
+import myImagesss from '../assets/Images/linkedin.png';
+
+
 
 const imageslider = () => {
   return (
@@ -12,8 +18,8 @@ const imageslider = () => {
         </video>
       </div>
       <div className="content">
-        <div className="text">
-          <h1 style={{ marginTop: '5rem' }}>Terrains Pro, Matchs Mémorables</h1>
+        <div className="textss">
+          <h1>Terrains Pro, Matchs Mémorables</h1>
           <p>Réservez facilement les meilleurs terrains de football à proximité. Profitez d’un service rapide, fiable et adapté à vos besoins, que vous soyez amateur ou professionnel. Découvrez une nouvelle façon de jouer, avec des installations de qualité et des expériences inoubliables.</p>
         </div>
         <div className="ok">
@@ -26,16 +32,16 @@ const imageslider = () => {
         
         <div className="oui">
   <a href="#" title="WhatsApp">
-    <img src="/path/to/whatsapp-icon.png" alt="WhatsApp" />
+    <img src={myImage} alt="WhatsApp" />
   </a>
   <a href="#" title="Twitter">
-    <img src="/path/to/twitter-icon.png" alt="Twitter" />
+    <img  src={myImages} alt="Twitter" />
   </a>
   <a href="#" title="Instagram">
-    <img src="/path/to/instagram-icon.png" alt="Instagram" />
+    <img src={myImagess} alt="Instagram" />
   </a>
   <a href="#" title="LinkedIn">
-    <img src="/path/to/linkedin-icon.png" alt="LinkedIn" />
+    <img src={myImagesss} alt="LinkedIn" />
   </a>
 </div>
 

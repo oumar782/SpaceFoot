@@ -1,27 +1,28 @@
-import myImage from '../assets/Images/1.png'; // Assurez-vous que l'image est bien présente dans ce chemin
+import React from 'react';
+import './section2.css';
 
-import './section2.css'; 
-
-const section2 = () => {
+const Section2 = () => {
   return (
-    <section className="home" id="home">
-    <div className="home-content">
-      <div className="text">
-        <div className="text-three">Réservez votre terrain de foot en quelques clics</div>
-        <div className="text-four">Profitez de nos installations de qualité pour vos matchs entre amis ou vos entraînements d'équipe.</div>
+    <section className="section-container">
+      <div className="section-header">
+        <h2>Créez des expériences <span className="highlight">inoubliables</span></h2>
+        <p>Explorez un monde de possibilités infinies où chaque détail est pensé pour vous offrir une expérience unique et mémorable.</p>
       </div>
-      <div className="image-container">
-        <img src={myImage} alt="Terrain de football" className="image-right" />
+      <div className="card-container">
+        <div className="card">
+          <div className="card-icon">❤️</div>
+          <h3 className="card-title">Design Captivant</h3>
+          <p className="card-description">Une expérience visuelle unique qui captive et inspire.</p>
+        </div>
+        <div className="card">
+          <div className="card-icon">⭐</div>
+          <h3 className="card-title">Qualité Premium</h3>
+          <p className="card-description">Une attention aux détails qui fait toute la différence.</p>
+        </div>
       </div>
-    </div>
-    <div className="button">
-      <button>Réserver maintenant</button>
-    </div>
-  </section>
-  
+      <button className="cta-button">Commencer maintenant</button>
+    </section>
+  );
+};
 
-  )
-
-}
-
-export default section2
+export default Section2;

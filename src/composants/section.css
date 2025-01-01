@@ -7,16 +7,20 @@
 #skills h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: white;
   margin-bottom: 1rem;
-  text-shadow: 1px 1px 10px rgba(0, 150, 0, 0.5);
+  text-shadow: 1px 1px 50px rgba(0, 150, 0, 0.5);
+  max-width: 90%;
+  margin: 0 auto 1rem;
 }
 
 #skills h5 {
   font-size: 1.2rem;
   font-style: italic;
-  color: #555;
+  color: white;
   margin-bottom: 2rem;
+  max-width: 90%;
+  margin: 0 auto 2rem;
 }
 
 /* Cards */
@@ -28,44 +32,49 @@
 }
 
 .card {
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  width: calc(33.333% - 2rem);
-  max-width: 300px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center; /* Centrer le texte dans les cartes */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px gray;
+  padding: 2rem;
+  flex-basis: calc(33.333% - 2rem);
+  max-width: 350px;
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: scale(1);
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 15px 20px green;
 }
 
 .card img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 150, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(12, 236, 12, 0.3);
   margin-bottom: 1rem;
 }
 
 .card h3 {
   font-size: 1.5rem;
-  color: #333;
+  color: white;
   margin: 1rem 0 0.5rem;
 }
 
 .card p {
   font-size: 1rem;
-  color: #555;
+  color: white;
   line-height: 1.5;
 }
 
 /* Responsivité */
 @media (max-width: 768px) {
   .card {
-    width: calc(50% - 2rem);
+    flex-basis: calc(50% - 2rem);
   }
 
   #skills h2 {
@@ -79,21 +88,14 @@
 
 @media (max-width: 480px) {
   .card {
-    width: 100%;
-    text-align: center; /* Assurer que le texte reste centré dans les cartes */
+    flex-basis: 100%;
   }
 
   #skills h2 {
     font-size: 1.5rem;
-    margin-left: 260px; /* Supprimer la marge pour centrer le texte */
   }
 
   #skills h5 {
     font-size: 1rem;
-  }
-
-  /* Optionnel : centrer les éléments à l'intérieur du conteneur parent */
-  .row {
-    justify-content: center; /* Centrer les cartes sur l'écran */
   }
 }
